@@ -2,12 +2,12 @@ FROM golang
 
 RUN go get -u github.com/golang/dep/cmd/dep
 
-COPY . /go/src/pipeline-service
-WORKDIR /go/src/pipeline-service
+COPY . /go/src/analytics-pipeline
+WORKDIR /go/src/analytics-pipeline
 
 RUN dep ensure
 RUN go build
 
 EXPOSE 8000
 
-CMD ./pipeline-service
+CMD ./analytics-pipeline

@@ -19,7 +19,7 @@ package main
 import (
 	"log"
 	"github.com/joho/godotenv"
-	"pipeline-service/lib"
+	"analytics-pipeline/lib"
 )
 
 func main() {
